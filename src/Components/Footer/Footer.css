@@ -1,0 +1,41 @@
+.container-footer {
+  width: 100%;
+  height: auto;
+  background-color: #c15d48;
+  font-family: "Segoe UI";
+  padding-top: 30px;
+}
+
+.container-footer-items {
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+}
+
+.footer-item h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+}
+
+.footer-item p {
+  font-size: 15px;
+  font-weight: 500;
+  color: black;
+}
+
+.container-footer-down {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  padding-bottom: 30px;
+  color: white;
+}
+
+.container-footer-down h4 {
+  margin-right: 15px;
+  font-size: 20px;
+  font-weight: 300;
+  color: white;
+}

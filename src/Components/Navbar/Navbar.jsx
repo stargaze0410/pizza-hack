@@ -12,9 +12,10 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
-
-const pages = ["Home", "Pizza", "Sushi", "Breakfast", "Salads"];
-const settings = ["Profile", "Account", "Dashboard", "Logout"];
+import "./Navbar.css";
+import { NavLink } from "react-router-dom";
+const pages = ["Home", "Pizza", "Sushi", "Breakfast", "Salads", "Drinks"];
+const settings = ["Sign In"];
 
 const ResponsiveAppBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -36,10 +37,10 @@ const ResponsiveAppBar = () => {
   };
 
   return (
-    <AppBar position="static" sx={{backgroundColor:"orange"}}>
+    <AppBar position="static" sx={{ backgroundColor: "#c15d48" }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
+          {/* <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} /> */}
           <Typography
             variant="h6"
             noWrap
@@ -48,14 +49,20 @@ const ResponsiveAppBar = () => {
             sx={{
               mr: 2,
               display: { xs: "none", md: "flex" },
-              fontFamily: "monospace",
-              fontWeight: 700,
+              fontFamily: "Segoe UI",
+              fontWeight: 300,
               letterSpacing: ".3rem",
               color: "inherit",
               textDecoration: "none",
             }}
           >
-            Здесь будет логотип
+            <br></br>EmpirePizza
+            <img
+              width={90}
+              src="https://mystickermania.com/cdn/stickers/109-512x512.png"
+              alt=""
+              srcset=""
+            />
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -89,7 +96,9 @@ const ResponsiveAppBar = () => {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
+                  {/* <NavLink to="/auth"> */}
                   <Typography textAlign="center">{page}</Typography>
+                  {/* </NavLink> */}
                 </MenuItem>
               ))}
             </Menu>
@@ -104,8 +113,8 @@ const ResponsiveAppBar = () => {
               mr: 2,
               display: { xs: "flex", md: "none" },
               flexGrow: 1,
-              fontFamily: "monospace",
-              fontWeight: 700,
+              fontFamily: "Segoe UI",
+              fontWeight: 300,
               letterSpacing: ".3rem",
               color: "black",
               textDecoration: "none",
@@ -113,7 +122,17 @@ const ResponsiveAppBar = () => {
           >
             LOGO
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex", display:"flex",justifyContent:'center'  } }}>
+          <Box
+            sx={{
+              flexGrow: 1,
+              display: {
+                xs: "none",
+                md: "flex",
+                display: "flex",
+                justifyContent: "center",
+              },
+            }}
+          >
             {pages.map((page) => (
               <Button
                 key={page}
@@ -128,7 +147,7 @@ const ResponsiveAppBar = () => {
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+                <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
               </IconButton>
             </Tooltip>
             <Menu
