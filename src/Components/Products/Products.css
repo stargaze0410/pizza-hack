@@ -1,0 +1,15 @@
+.product__block-details {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.mySwiper1 .swiper-wrapper {
+  justify-content: center;
+}
+.mySwiper1 .swiper-slide {
+  /* margin: 40px 0; */
+  cursor: pointer;
+}
+.mySwiper1 .swiper-slide.swiper-slide-thumb-active {
+  border-bottom: 5px solid #1b5e20;
+}

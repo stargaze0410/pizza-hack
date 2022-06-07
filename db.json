@@ -1,0 +1,34 @@
+{
+  "products": [
+    {
+      "title": "Pepperoni",
+      "type": "Pizza",
+      "description": "Пеперо́ни — острая разновидность салями итало-американского происхождения",
+      "price": "5$",
+      "img1": "https://i.pinimg.com/originals/58/1a/28/581a288ae9ad427627108404d79b56fd.jpg",
+      "img2": "",
+      "img3": "",
+      "id": 6
+    },
+    {
+      "title": "Pepperoni",
+      "type": "Pizza",
+      "description": "Пеперо́ни — острая разновидность салями итало-американского происхождения",
+      "price": "5$",
+      "img1": "https://i.pinimg.com/originals/58/1a/28/581a288ae9ad427627108404d79b56fd.jpg",
+      "img2": "",
+      "img3": "",
+      "id": 1
+    },
+    {
+      "title": "Philadelphia",
+      "type": "Sushi",
+      "description": "Ролл «Филадельфия» — разновидность суши, обычно сделанные из копченого лосося",
+      "price": "3$",
+      "img1": "https://cookmaster.online/wp-content/uploads/2019/01/roll-filadelfiya.jpg",
+      "img2": "",
+      "img3": "",
+      "id": 2
+    }
+  ]
+}

@@ -14,7 +14,17 @@ import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 import "./Navbar.css";
 import { NavLink } from "react-router-dom";
-const pages = ["Home", "Pizza", "Sushi", "Breakfast", "Salads", "Drinks"];
+import { Badge } from "@mui/material";
+import NotificationsIcon from "@mui/icons-material/Notifications";
+import LocalGroceryStoreIcon from "@mui/icons-material/LocalGroceryStore";
+
+// const pages = ["Home", "Pizza", "Sushi", "Breakfast", "Salads", "Drinks"];
+// const pages = [
+//   { name: "Home", path: "/", id: 1 },
+//   { name: "Product", path: "/productlist", id:2 },
+//   { name: "Auth", path: "/auth", id:3 },
+// ];
+
 const settings = ["Sign In"];
 
 const ResponsiveAppBar = () => {
@@ -58,10 +68,10 @@ const ResponsiveAppBar = () => {
           >
             <br></br>EmpirePizza
             <img
-              width={90}
+              width={80}
               src="https://mystickermania.com/cdn/stickers/109-512x512.png"
               alt=""
-              srcset=""
+              // srcSet=""
             />
           </Typography>
 
@@ -94,13 +104,10 @@ const ResponsiveAppBar = () => {
                 display: { xs: "block", md: "none" },
               }}
             >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  {/* <NavLink to="/auth"> */}
-                  <Typography textAlign="center">{page}</Typography>
-                  {/* </NavLink> */}
-                </MenuItem>
-              ))}
+              {/* burger */}
+              <MenuItem onClick={handleCloseNavMenu}>
+                <Typography textAlign="center">Home</Typography>
+              </MenuItem>
             </Menu>
           </Box>
           <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
@@ -133,22 +140,35 @@ const ResponsiveAppBar = () => {
               },
             }}
           >
-            {pages.map((page) => (
+            {/* {pages.map((page) => ( */}
+            <NavLink to="/">
               <Button
-                key={page}
+                // key={pag}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: "white", display: "block" }}
               >
-                {page}
+                Home
               </Button>
-            ))}
+            </NavLink>
+            <NavLink to="/productlist">
+              <Button
+                // key={pag}
+                onClick={handleCloseNavMenu}
+                sx={{ my: 2, color: "white", display: "block" }}
+              >
+                Food
+              </Button>
+            </NavLink>
+            {/* ))} */}
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
-              <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
-              </IconButton>
+              <NavLink to="/auth">
+                <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
+                  <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
+                </IconButton>
+              </NavLink>
             </Tooltip>
             <Menu
               sx={{ mt: "45px" }}
@@ -173,6 +193,17 @@ const ResponsiveAppBar = () => {
               ))}
             </Menu>
           </Box>
+          <MenuItem>
+            <IconButton
+              size="large"
+              aria-label="show 17 new notifications"
+              color="inherit"
+            >
+              <Badge badgeContent={17} color="error">
+                <LocalGroceryStoreIcon />
+              </Badge>
+            </IconButton>
+          </MenuItem>
         </Toolbar>
       </Container>
     </AppBar>

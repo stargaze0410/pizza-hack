@@ -11,18 +11,15 @@ import "./HomePage.css";
 
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper";
+import { DisplaySettings } from "@mui/icons-material";
 
 export default function App() {
   return (
     <>
       <Swiper
-        width={400}
-        spaceBetween={80}
-        centeredSlides={true}
-        autoplay={{
-          delay: 5500,
-          disableOnInteraction: false,
-        }}
+        width={300}
+        spaceBetween={90}
+        centeredSlides={false}
         pagination={{
           clickable: true,
         }}
@@ -88,18 +85,6 @@ export default function App() {
         <SwiperSlide>
           <img
             src="https://eda.yandex/images/3502490/97c5627e3fbbff1e32439ee0e58f5336-1100x825.jpg"
-            alt=""
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            src="https://kartinkin.net/uploads/posts/2021-07/1627417202_16-kartinkin-com-p-pitstsa-sushi-kola-yeda-krasivo-foto-21.jpg"
-            alt=""
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            src="https://kartinkin.net/uploads/posts/2021-07/1627417202_16-kartinkin-com-p-pitstsa-sushi-kola-yeda-krasivo-foto-21.jpg"
             alt=""
           />
         </SwiperSlide>
