@@ -81,7 +81,12 @@ const CartContextProvider = ({ children }) => {
   const deleteCartProduct = (id) => {
     let cart = JSON.parse(localStorage.getItem("cart"));
     cart.products = cart.products.filter((elem) => elem.item.id !== id);
+    cart.totalPrice = calcTotalPrice(cart.products);
     localStorage.setItem("cart", JSON.stringify(cart));
+    dispatch({
+      type: "CHANGE_CART_COUNT",
+      payload: cart.products.length,
+    });
     getCart();
   };
 
