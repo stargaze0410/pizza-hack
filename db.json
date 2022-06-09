@@ -4,31 +4,401 @@
       "title": "Pepperoni",
       "type": "Pizza",
       "description": "Пеперо́ни — острая разновидность салями итало-американского происхождения",
-      "price": "5$",
+      "price": "5",
       "img1": "https://i.pinimg.com/originals/58/1a/28/581a288ae9ad427627108404d79b56fd.jpg",
       "img2": "",
       "img3": "",
       "id": 6
     },
     {
-      "title": "Pepperoni",
+      "title": "Песто",
       "type": "Pizza",
-      "description": "Пеперо́ни — острая разновидность салями итало-американского происхождения",
-      "price": "5$",
-      "img1": "https://i.pinimg.com/originals/58/1a/28/581a288ae9ad427627108404d79b56fd.jpg",
-      "img2": "",
-      "img3": "",
-      "id": 1
+      "description": "Цыпленок, соус песто, кубики брынзы, томаты, моцарелла, соус альфредо",
+      "price": "5",
+      "img1": "https://dodopizza-a.akamaihd.net/static/Img/Products/103d94956de3424586764b1adeca5e68_292x292.jpeg",
+      "img2": "всм",
+      "img3": "выпмук",
+      "id": 8
     },
     {
-      "title": "Philadelphia",
+      "title": "Ветчина и грибы",
+      "type": "Pizza",
+      "description": "Ветчина, шампиньоны, увеличенная порция моцареллы, томатный соус",
+      "price": "5",
+      "img1": "https://dodopizza-a.akamaihd.net/static/Img/Products/aa845b6e841241fbbff1a770b3ad3103_292x292.jpeg",
+      "img2": "вссырв",
+      "img3": "выпмвыак",
+      "id": 9
+    },
+    {
+      "title": "Классическая",
+      "type": "Pizza",
+      "description": "Увеличенная порция моцареллы, томатный соус",
+      "price": "5",
+      "img1": "https://mobile.mypizza.kg/jpg/%D0%B4%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D1%8F%D1%8F.jpg",
+      "img2": "вссыdvрв",
+      "img3": "выпмвgыак",
+      "id": 10
+    },
+    {
+      "title": "Италия",
+      "type": "Pizza",
+      "description": "Цыпленок, ветчина, пикантная пепперони, острая чоризо, моцарелла, томатный соус",
+      "price": "5",
+      "img1": "https://n1s1.hsmedia.ru/4e/fa/18/4efa18fab68b54bfbe731ffed6d475ea/728x542_1_4b74ef42acac035d207606a9427e04f0@1000x745_0xac120003_11819542861578938700.jpg",
+      "img2": "dvрв",
+      "img3": "ыак",
+      "id": 11
+    },
+    {
+      "title": "Пицца Охотничья",
+      "type": "Pizza",
+      "description": "Пицца-соус, сыр моцарелла, куриная грудка, копчёная курица, охотничьи колбаски, лук.",
+      "price": "5",
+      "img1": "https://cdn.carte.by/assets/2020/04/03/a13dce3bfe207304025ef0b85245a0ab-97591_src---jpg_710x_83b40_convert.jpg",
+      "img2": "dvрв",
+      "img3": "ыак",
+      "id": 12
+    },
+    {
+      "title": "Вегетарианская",
+      "type": "Pizza",
+      "description": "Пицца-соус, сыр «Моцарелла», зелень, лук, шампиньоны, болгарский перец, помидоры, маслины, кукуруза.",
+      "price": "5",
+      "img1": "https://foodman.club/wp-content/uploads/2017/11/%D0%BF%D0%B8%D0%BF%D0%B8%D1%86.jpg",
+      "img2": "dvрв",
+      "img3": "ыак",
+      "id": 13
+    },
+    {
+      "title": "Пицца 4 сыра",
+      "type": "Pizza",
+      "description": "Пицца-соус, сыры: моцарелла, эмменталь, дорблю, пармезан.",
+      "price": "5",
+      "img1": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-S85-OTmlLDd1EVMrw33IcxQ1P21XVhvA7g&usqp=CAU",
+      "img2": "dvрв",
+      "img3": "ыак",
+      "id": 14
+    },
+    {
+      "title": "Хот чиз ролл",
       "type": "Sushi",
-      "description": "Ролл «Филадельфия» — разновидность суши, обычно сделанные из копченого лосося",
-      "price": "3$",
-      "img1": "https://cookmaster.online/wp-content/uploads/2019/01/roll-filadelfiya.jpg",
-      "img2": "",
-      "img3": "",
-      "id": 2
+      "description": "Хот чиз 200 гр Тобико, огурцы маринованные, помидоры, крим-чиз, сыр сулугуни.",
+      "price": "5",
+      "img1": "https://market.vseokoree.com/images/product/1633605578imgonlinecomuaresizettmzrdotsw.jpg",
+      "img2": "dvрв",
+      "img3": "ыак",
+      "id": 15
+    },
+    {
+      "title": "Чикен ролл",
+      "type": "Sushi",
+      "description": " Чикен ролл 170 гр Куриная грудка, помидор, майонез, кунжут",
+      "price": "5",
+      "img1": "https://mobile.mypizza.kg/jpg/%D1%87%D0%B8%D0%BA%D0%B5%D0%BD%20%D1%80%D0%BE%D0%BB%D0%BB.jpg",
+      "img2": "dв",
+      "img3": "ы",
+      "id": 16
+    },
+    {
+      "title": "Флорида ролл",
+      "type": "Sushi",
+      "description": "Флорида 230 гр, Угорь, лосось гриль, крим-чиз, кунжут, огурец, соус Унаги",
+      "price": "5",
+      "img1": "https://roll-club.kh.ua/wp-content/uploads/2021/12/unagi-lajt.jpg",
+      "img2": "dв",
+      "img3": "ы",
+      "id": 18
+    },
+    {
+      "title": "Мехико",
+      "type": "Sushi",
+      "description": " Лосось терияки жареный, сливочный сыр,сыр пармезан, соус унаги, соус спайси, семя кунжута, лук зеленый.",
+      "price": "349 сом",
+      "img1": "https://sushi-time.kg/wp-content/uploads/2022/01/13-2.jpg",
+      "img2": "dв",
+      "img3": "ы",
+      "id": 19
+    },
+    {
+      "title": "Запеченный ролл ногано",
+      "type": "Sushi",
+      "description": "Запеченный Ролл Нагано 195 гр, Угорь, креветка, огурец, тобико, соус хот",
+      "price": "290",
+      "img1": "https://static.1000.menu/img/content/24109/zapechennye-rolly-s-forelu_1511518963_1_max.jpg",
+      "img2": "d",
+      "img3": "ы",
+      "id": 20
+    },
+    {
+      "title": "Омлет с овощами и тостом ",
+      "type": "Breakfast",
+      "description": "Омлет с овощами и тостом",
+      "price": "290",
+      "img1": "https://cdn.tveda.ru/thumbs/bab/bab3a1d5fd1520203899b3a339953251/11798b9db096fdadc0b40bf105679217.jpg",
+      "img2": "d",
+      "img3": "ы",
+      "id": 21
+    },
+    {
+      "title": "Круассан филадельфия ",
+      "type": "Breakfast",
+      "description": "Со слабосолёной сёмгой, крем-сыром филадельфия, огурцами, зеленью, салатом Айсберг.",
+      "price": "200",
+      "img1": "https://img.freepik.com/free-photo/croissant-sandwich-with-salted-salmon-on-black-plate-served-with-fresh-basil-leaves-avocado-and-philadelphia-cheese-french-breakfast-healthy-eating-concept_72753-966.jpg?w=2000",
+      "img2": "d",
+      "img3": "ы",
+      "id": 22
+    },
+    {
+      "title": "Сырники",
+      "type": "Breakfast",
+      "description": "Блюдо украинской , русской , белорусской кухонь в виде обжаренных лепёшек из творога, муки и яиц.",
+      "price": "175",
+      "img1": "https://i.ytimg.com/vi/pvp_L_gaGwc/maxresdefault.jpg",
+      "img2": "d",
+      "img3": "ы",
+      "id": 23
+    },
+    {
+      "title": "Гранола ",
+      "type": "Breakfast",
+      "description": "Карамелизированная хрустящая смесь полезных злаков, греческий йогурт, свежие фрукты и ягоды.",
+      "price": "190",
+      "img1": "https://www.patee.ru/r/x6/14/4d/c1/960m.jpg",
+      "img2": "d",
+      "img3": "ы",
+      "id": 24
+    },
+    {
+      "title": "Яичница с фирменными сосисками",
+      "type": "Breakfast",
+      "description": "Фирменные куриные сосиски, яичница-глазунья, хрустящий тост.",
+      "price": "190",
+      "img1": "https://img-global.cpcdn.com/recipes/7a3ab7fef2154e82/1200x630cq70/photo.jpg",
+      "img2": "d",
+      "img3": "ы",
+      "id": 25
+    },
+    {
+      "title": "Панкейки",
+      "type": "Breakfast",
+      "description": "Панкейки. Подаётся с карамельно-апельсиновым соусом и ягодами.",
+      "price": "190",
+      "img1": "https://art-lunch.ru/wp-content/uploads/2018/02/Pancakes_01.jpg",
+      "img2": "d",
+      "img3": "ы",
+      "id": 26
+    },
+    {
+      "title": "Каша рисовая.",
+      "type": "Breakfast",
+      "description": "Каша рисовая. Подаётся с ягодным соусом.",
+      "price": "160",
+      "img1": "https://s1.eda.ru/StaticContent/Photos/130822102925/190811173919/p_O.jpg",
+      "img2": "d",
+      "img3": "ы",
+      "id": 27
+    },
+    {
+      "title": "Блины со сметаной.",
+      "type": "Breakfast",
+      "description": "Тонкие блины со сметаной.",
+      "price": "150",
+      "img1": "https://www.alizy.club/wp-content/uploads/2018/01/bliny-na-smetane-min.jpg",
+      "img2": "ооа",
+      "img3": "чы",
+      "id": 28
+    },
+    {
+      "title": "Овсяная каша",
+      "type": "Breakfast",
+      "description": "Каша на натуральном молоке из овсяной крупы с добавлением сливочного масла.",
+      "price": "160",
+      "img1": "https://www.tulapressa.ru/wp-content/uploads/2020/08/04/bc21f696.jpg",
+      "img2": "ооа",
+      "img3": "чы",
+      "id": 29
+    },
+    {
+      "title": "Блины с творогом",
+      "type": "Breakfast",
+      "description": "Тонкие блины с творожной начинкой.",
+      "price": "150",
+      "img1": "https://www.eda27.ru/sites/default/files/Slavin/blin-kompot-blin.jpg",
+      "img2": "ооа",
+      "img3": "чы",
+      "id": 30
+    },
+    {
+      "title": "Балтика ролл",
+      "type": "Sushi",
+      "description": "шпроты, огурец, майонез, зеленый лук, кунжут",
+      "price": "300",
+      "img1": "https://www.tokyo-city.ru/goods/roll_veggy.jpg",
+      "img2": "dв",
+      "img3": "ы",
+      "id": 32
+    },
+    {
+      "title": "Филадельфия",
+      "type": "Sushi",
+      "description": "Лосось, сыр филадельфия, омлет, огурец.",
+      "price": "340",
+      "img1": "https://vilkin.pro/wp-content/uploads/2019/02/rolli-filadelfiya-770x513.jpg",
+      "img2": "dв",
+      "img3": "ы",
+      "id": 33
+    },
+    {
+      "title": "Калифорния",
+      "type": "Sushi",
+      "description": "Крабовые палочки, тобико, майонез, огурец, омлет",
+      "price": "320",
+      "img1": "https://baikal-tomsk.ru/wp-content/uploads/2017/04/%D0%BA%D0%B0%D0%BB%D0%B8%D1%84%D0%BE%D1%80%D0%BD%D0%B8%D1%8F%D0%BA%D0%B0%D0%BD%D0%B8-%D1%8D%D0%B1%D0%B8-%D1%81%D1%8F%D0%BA%D0%B5.jpg",
+      "img2": "dв",
+      "img3": "ы",
+      "id": 34
+    },
+    {
+      "title": "Цезарь ролл",
+      "type": "Sushi",
+      "description": "Куриная грудка, лист салата, сыр Пармезан, соус Цезарь, кунжут",
+      "price": "320",
+      "img1": "https://sushifast.ru/wp-content/uploads/2017/11/cezar_roll.jpg",
+      "img2": "dв",
+      "img3": "ы",
+      "id": 35
+    },
+    {
+      "title": "Неги ролл",
+      "type": "Sushi",
+      "description": "Скумбрия, зеленый лук, майонез, укроп",
+      "price": "280",
+      "img1": "https://yummy-gomel.by/wp-content/uploads/2020/05/9.-negi-toro.jpg",
+      "img2": "dв",
+      "img3": "ы",
+      "id": 36
+    },
+    {
+      "title": "Суши унаги",
+      "type": "Sushi",
+      "description": "Угорь, рис, водоросли нори, кунжут, соус унаги.",
+      "price": "380",
+      "img1": "https://www.tokyo-city.ru/goods/sushi_sake.jpg",
+      "img2": "dв",
+      "img3": "ы",
+      "id": 37
+    },
+    {
+      "title": "Майами",
+      "type": "Sushi",
+      "description": "Креветки, сливочный сыр, омлет тамаго, рис, огурец, водоросли нори, соусы спайси и чили, масаго.",
+      "price": "380",
+      "img1": "https://www.tokyo-city.ru/goods/roll_miami.jpg",
+      "img2": "dв",
+      "img3": "ы",
+      "id": 38
+    },
+    {
+      "title": "Пицца Итальянка.",
+      "type": "Pizza",
+      "description": "Пицца-соус, сыр моцарелла, говядина с грибами-вёшенками в сливочном соусе, зелень.",
+      "price": "5",
+      "img1": "https://km-doma.ru/assets/gallery_thumbnails/31/319484a4bb725e4eacab62c7f0c7f1ed.jpg",
+      "img2": "dв",
+      "img3": "ыак",
+      "id": 39
+    },
+    {
+      "title": "Пицца Шашлычная с говядиной.",
+      "type": "Pizza",
+      "description": "Пицца-соус, сыр моцарелла, маринованная говядина, помидоры, зелень. Подаётся с маринованным луком.",
+      "price": "420",
+      "img1": "https://mobile.mypizza.kg/jpg/%D1%88%D0%B0%D1%88%D0%BB%D1%8B%D1%87%D0%BD%D0%B0%D1%8F_%D0%B3%D0%BE%D0%B2%D1%8F%D0%B4%D0%B8%D0%BD%D0%B0.jpg",
+      "img2": "dв",
+      "img3": "ыак",
+      "id": 40
+    },
+    {
+      "title": "Coca-Cola",
+      "type": "Drinks",
+      "description": "Кока-кола 1л",
+      "price": "120",
+      "img1": "https://jawis.com.pl/media/ioilc2gp/coca-cola1.jpg?anchor=center&mode=crop&width=525&height=350&rnd=132472357523030000",
+      "img2": "dв",
+      "img3": "ыак",
+      "id": 41
+    },
+    {
+      "title": "Sprite",
+      "type": "Drinks",
+      "description": "Sprite 1л",
+      "price": "120",
+      "img1": "https://st.depositphotos.com/2121815/4748/i/600/depositphotos_47482759-stock-photo-bottle-of-sprite-drink-on.jpg",
+      "img2": "dв",
+      "img3": "ыак",
+      "id": 42
+    },
+    {
+      "title": "Fanta",
+      "type": "Drinks",
+      "description": "Fanta 1л",
+      "price": "120",
+      "img1": "https://hellosushki.ru/image/cache/catalog/1000x600/fanta-1-1000x600.jpg",
+      "img2": "dв",
+      "img3": "ыак",
+      "id": 43
+    },
+    {
+      "title": "J7 1Л",
+      "type": "Drinks",
+      "description": "J7 1л",
+      "price": "200",
+      "img1": "https://jitnitsa.ru/wp-content/uploads/2020/09/41091-445x297.jpg",
+      "img2": "dв",
+      "img3": "ыак",
+      "id": 44
+    },
+    {
+      "title": "Borjomi",
+      "type": "Drinks",
+      "description": "Borjomi",
+      "price": "70",
+      "img1": "https://st-1.akipress.org/st_gallery/78/1354178.7f98fc32571f87b336f9fb1a712e0249.jpg",
+      "img2": "dв",
+      "img3": "ыак",
+      "id": 45
+    },
+    {
+      "title": "Red Bull",
+      "type": "Drinks",
+      "description": "Red Bull",
+      "price": "170",
+      "img1": "https://media.istockphoto.com/photos/aluminium-can-of-red-bull-energy-drink-iced-background-picture-id537022544?k=20&m=537022544&s=612x612&w=0&h=r5OPbtcVPAxBkmnkyfczQwxfbFH9beInZeea0xxjoiM=",
+      "img2": "dв",
+      "img3": "ыак",
+      "id": 46
+    },
+    {
+      "title": "Nitro",
+      "type": "Drinks",
+      "description": "Nitro",
+      "price": "100",
+      "img1": "https://mir-s3-cdn-cf.behance.net/projects/404/25552482333357.Y3JvcCw4MTgsNjQwLDU4LDA.jpg",
+      "img2": "dв",
+      "img3": "ак",
+      "id": 47
+    },
+    {
+      "title": "Fuse tea",
+      "type": "Drinks",
+      "description": "Fuse tea",
+      "price": "100",
+      "img1": "https://vivalacloud.ru/wp-content/uploads/2018/03/NESTEA_FUSETEA-3.jpg ",
+      "img2": "dв",
+      "img3": "ак",
+      "id": 48
     }
   ]
 }

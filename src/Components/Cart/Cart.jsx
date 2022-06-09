@@ -11,9 +11,16 @@ const Cart = () => {
 
   return (
     <div>
-      <table>
+      <table
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "space-between",
+          alignItems: "center",
+        }}
+      >
         <thead>
-          <tr>
+          <tr style={{ display: "flex" }}>
             <th>Фото</th>
             <th>Название</th>
             <th>Цена</th>
@@ -50,8 +57,17 @@ const Cart = () => {
             : null}
         </tbody>
       </table>
-      <h4>Общая сумма: {cart.totalPrice}</h4>
-      <button>Заказать</button>
+      <h4
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "space-between",
+          alignItems: "center",
+        }}
+      >
+        Общая сумма: {cart.totalPrice}
+        <button>Заказать</button>
+      </h4>
     </div>
   );
 };

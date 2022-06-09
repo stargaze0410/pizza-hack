@@ -9,7 +9,7 @@ const EditProduct = () => {
 
   let { id } = useParams();
 
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
 
   useEffect(() => {
     getProductsDetails(id);
@@ -28,7 +28,7 @@ const EditProduct = () => {
   const handleSave = (e) => {
     e.preventDefault();
     editProduct(id, inpValues);
-    // navigate("/list");
+    navigate("/productlist");
   };
 
   return (
@@ -90,9 +90,11 @@ const EditProduct = () => {
         onChange={(e) => handleChange(e)}
       />
 
-      <Button type="submit" variant="contained">
+      {/* <NavLink to="/productlist"> */}
+      <Button onClick={handleSave} type="submit" variant="contained">
         Edit
       </Button>
+      {/* </NavLink> */}
     </form>
   );
 };

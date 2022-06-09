@@ -12,8 +12,9 @@ import Alert from "@mui/material/Alert";
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import TrendingDownIcon from "@mui/icons-material/TrendingDown";
 import Paper from "@mui/material/Paper";
-// import "./Products.css";
+import "./Products.css";
 import "swiper/css";
+import { cartContext } from "../../context/CartContext";
 
 import SwiperCore, { Thumbs } from "swiper";
 
@@ -26,7 +27,7 @@ const ProductDetails = () => {
   useEffect(() => {
     getProductsDetails(id);
   }, []);
-
+  const { addProductToCart } = useContext(cartContext);
   return (
     <section className="product__block-details">
       <Container>
@@ -44,7 +45,7 @@ const ProductDetails = () => {
                   alt={productDetails.title}
                 />
               </SwiperSlide>
-              <SwiperSlide>
+              {/* <SwiperSlide>
                 <img
                   width={400}
                   src={productDetails.img2}
@@ -75,7 +76,7 @@ const ProductDetails = () => {
                     alt={productDetails.title}
                   />
                 </Paper>
-              </SwiperSlide>
+              </SwiperSlide> */}
               <SwiperSlide>
                 <Paper elevation={3}>
                   <img
@@ -160,6 +161,7 @@ const ProductDetails = () => {
               </Typography>
             </Box>
             <Button
+              onClick={(e) => addProductToCart(productDetails)}
               variant="contained"
               color="success"
               startIcon={<AddShoppingCartIcon />}

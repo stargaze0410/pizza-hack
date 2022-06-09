@@ -68,7 +68,7 @@ const AddProduct = () => {
         <div>
           <TextField
             id="outlined-basic"
-            label="Название"
+            label="Name"
             variant="outlined"
             value={inpValues.title}
             name="title"
@@ -79,7 +79,7 @@ const AddProduct = () => {
         <div>
           <TextField
             id="outlined-basic"
-            label="Тип"
+            label="Type"
             variant="outlined"
             value={inpValues.type}
             name="type"
@@ -90,7 +90,7 @@ const AddProduct = () => {
         <div>
           <TextField
             id="outlined-basic"
-            label="Описание"
+            label="Description"
             variant="outlined"
             value={inpValues.description}
             name="description"
@@ -102,7 +102,7 @@ const AddProduct = () => {
           <TextField
             id="outlined-basic"
             type="number"
-            label="Цена"
+            label="Price"
             variant="outlined"
             value={inpValues.price}
             name="price"
@@ -113,7 +113,7 @@ const AddProduct = () => {
         <div>
           <TextField
             id="outlined-basic"
-            label="Изображение 1"
+            label="IMG1"
             variant="outlined"
             value={inpValues.img1}
             name="img1"
@@ -124,7 +124,7 @@ const AddProduct = () => {
         <div>
           <TextField
             id="outlined-basic"
-            label="Изображение 2"
+            label="IMG2"
             variant="outlined"
             value={inpValues.img2}
             name="img2"
@@ -135,7 +135,7 @@ const AddProduct = () => {
         <div>
           <TextField
             id="outlined-basic"
-            label="Изображение 3"
+            label="IMG3"
             variant="outlined"
             value={inpValues.img3}
             name="img3"

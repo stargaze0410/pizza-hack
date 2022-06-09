@@ -1,15 +1,15 @@
 import firebase from "firebase/compat/app";
 import "firebase/compat/app";
-import "firebase/compat/auth"
+import "firebase/compat/auth";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyBfoe1HfVhy0uDSatQ384M4HwdrbY8GyTw",
-    authDomain: "final-project-84210.firebaseapp.com",
-    projectId: "final-project-84210",
-    storageBucket: "final-project-84210.appspot.com",
-    messagingSenderId: "850845450775",
-    appId: "1:850845450775:web:6e51042b15d785ef385252",
-    measurementId: "G-XMF4M0B79L"
+  apiKey: "AIzaSyAamcqHKQA0IVclz1MawLo_sXVzSo1A3L8",
+  authDomain: "pizza-hack.firebaseapp.com",
+  projectId: "pizza-hack",
+  storageBucket: "pizza-hack.appspot.com",
+  messagingSenderId: "770453862026",
+  appId: "1:770453862026:web:dde5bd6c9d658a55895f73",
+  measurementId: "G-9YQ7XZ3D19",
 };
 
 // Инициализируем Firebase

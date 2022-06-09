@@ -14,9 +14,14 @@ import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 import "./Navbar.css";
 import { NavLink } from "react-router-dom";
-import { Badge } from "@mui/material";
-import NotificationsIcon from "@mui/icons-material/Notifications";
+import { alpha, Badge, TextField } from "@mui/material";
 import LocalGroceryStoreIcon from "@mui/icons-material/LocalGroceryStore";
+import { cartContext } from "../../context/CartContext";
+import SearchIcon from "@mui/icons-material/Search";
+import InputBase from "@mui/material/InputBase";
+import LiveSearch from "../LiveSearch/LiveSearch";
+
+// import { styled, alpha } from '@mui/material/styles';
 
 // const pages = ["Home", "Pizza", "Sushi", "Breakfast", "Salads", "Drinks"];
 // const pages = [
@@ -27,9 +32,26 @@ import LocalGroceryStoreIcon from "@mui/icons-material/LocalGroceryStore";
 
 const settings = ["Sign In"];
 
+// const Search = styled("div")(({ theme }) => ({
+//   position: "relative",
+//   borderRadius: theme.shape.borderRadius,
+//   backgroundColor: alpha(theme.palette.common.white, 0.15),
+//   "&:hover": {
+//     backgroundColor: alpha(theme.palette.common.white, 0.25),
+//   },
+//   marginRight: theme.spacing(2),
+//   marginLeft: 0,
+//   width: "100%",
+//   [theme.breakpoints.up("sm")]: {
+//     marginLeft: theme.spacing(3),
+//     width: "auto",
+//   },
+// }));
+
 const ResponsiveAppBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
+  const { cartLength } = React.useContext(cartContext);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -105,6 +127,7 @@ const ResponsiveAppBar = () => {
               }}
             >
               {/* burger */}
+
               <MenuItem onClick={handleCloseNavMenu}>
                 <Typography textAlign="center">Home</Typography>
               </MenuItem>
@@ -129,6 +152,7 @@ const ResponsiveAppBar = () => {
           >
             LOGO
           </Typography>
+          <LiveSearch />
           <Box
             sx={{
               flexGrow: 1,
@@ -150,6 +174,15 @@ const ResponsiveAppBar = () => {
                 Home
               </Button>
             </NavLink>
+            <NavLink to="/add">
+              <Button
+                // key={pag}
+                onClick={handleCloseNavMenu}
+                sx={{ my: 2, color: "white", display: "block" }}
+              >
+                Add Food
+              </Button>
+            </NavLink>
             <NavLink to="/productlist">
               <Button
                 // key={pag}
@@ -166,7 +199,10 @@ const ResponsiveAppBar = () => {
             <Tooltip title="Open settings">
               <NavLink to="/auth">
                 <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                  <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
+                  <Avatar
+                    alt="E"
+                    src="https://cdn.logo.com/hotlink-ok/logo-social.png"
+                  />
                 </IconButton>
               </NavLink>
             </Tooltip>
@@ -193,17 +229,18 @@ const ResponsiveAppBar = () => {
               ))}
             </Menu>
           </Box>
-          <MenuItem>
-            <IconButton
-              size="large"
-              aria-label="show 17 new notifications"
-              color="inherit"
-            >
-              <Badge badgeContent={17} color="error">
+
+          <IconButton
+            size="large"
+            aria-label="show 17 new notifications"
+            color="inherit"
+          >
+            <NavLink to="/cart">
+              <Badge badgeContent={cartLength} color="error">
                 <LocalGroceryStoreIcon />
               </Badge>
-            </IconButton>
-          </MenuItem>
+            </NavLink>
+          </IconButton>
         </Toolbar>
       </Container>
     </AppBar>

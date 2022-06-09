@@ -128,9 +128,16 @@ const ProductsList = () => {
                     marginBottom: "30px",
                   }}
                 >
-                  <Button className="btn1" size="small" variant="outlined">
-                    Edit
-                  </Button>
+                  <NavLink to={`/edit/${item.id}`}>
+                    <Button
+                      className="btn1"
+                      justifyContent="end"
+                      size="small"
+                      variant="outlined"
+                    >
+                      Edit
+                    </Button>
+                  </NavLink>
                   <Button
                     sx={{
                       marginRight: "20px",
@@ -144,7 +151,7 @@ const ProductsList = () => {
                   </Button>
                   <NavLink to={`/details/${item.id}`}>
                     <Button className="btn" size="small" variant="outlined">
-                      Preview
+                      Details
                     </Button>
                   </NavLink>
 

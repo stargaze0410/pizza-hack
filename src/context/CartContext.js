@@ -103,7 +103,7 @@ const CartContextProvider = ({ children }) => {
     <cartContext.Provider
       value={{
         cart: state.cart,
-        cartLenght: state.cartLength,
+        cartLength: state.cartLength,
         addProductToCart,
         getCart,
         deleteCartProduct,

@@ -52,7 +52,7 @@ const LiveSearch = () => {
   const location = useLocation();
 
   useEffect(() => {
-    if (location.pathname === "/list") {
+    if (location.pathname === "/productlist") {
       setSearchParams({
         q: searchValue,
       });

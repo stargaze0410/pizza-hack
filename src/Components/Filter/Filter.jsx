@@ -24,6 +24,8 @@ const Filter = ({ type, setType }) => {
             label="Breakfast"
           />
           <FormControlLabel value="Sushi" control={<Radio />} label="Sushi" />
+          <FormControlLabel value="Drinks" control={<Radio />} label="Drinks" />
+
           <FormControlLabel value="all" control={<Radio />} label="All Menu" />
         </RadioGroup>
       </FormControl>
